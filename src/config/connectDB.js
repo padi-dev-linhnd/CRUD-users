@@ -5,7 +5,7 @@ const sequelize = new Sequelize("user", "root", "", {
   dialect: "mysql",
 });
 
-var connectDB = async () => {
+const connectDB = async () => {
   try {
     await sequelize.authenticate();
     console.log("Connection has been established successfully.");
